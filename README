@@ -98,3 +98,11 @@ INSTALLATION
    g++ -O3 -Wall -g main.cc -o gfold -lgsl -lgslcblas -I/your/installed/path/include -L/your/installed/path/lib
 
 3. The executable program is "gfold" with documentation in directory "doc"
+
+# install using bioconda
+```
+conda install gfold -c bioconda
+conda install -c conda-forge gsl
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/hmd/miniconda3/lib
+```
+Add the last line in .bash.rc
